@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import Skills from '../components/Skills'
 import Link from 'next/link'
 import Projects from '../components/Projects'
+import TimeLine from '../components/TimeLine'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex pl-20 py-0 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hi There,
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hi There,
               <br className="hidden lg:inline-block"/>I'm Nitin Garg
             </h1>
             <p className="mb-8 leading-relaxed">I am into Web development</p>
@@ -29,24 +30,24 @@ export default function Home() {
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Read More</button>
             </div>
             <div style={{display:'flex',height:'100px', width:'300px'}}>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <Link href="https://www.linkedin.com/in/nitin-garg-a93ba31b9">
-                <img alt="" class="object-cover object-center w-full h-full block" src="linkedin.svg" style={{objectFit:'contain'}}/>
+                <img alt="" className="object-cover object-center w-full h-full block" src="linkedin.svg" style={{objectFit:'contain'}}/>
                 </Link>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <Link href="https://github.com/nitingarg2207">
-                <img alt="" class="object-cover object-center w-full h-full block" src="github.svg" style={{objectFit:'contain'}}/>
+                <img alt="" className="object-cover object-center w-full h-full block" src="github.svg" style={{objectFit:'contain'}}/>
                 </Link>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <Link href="https://leetcode.com/nitin2003">
-                <img alt="" class="object-cover object-center w-full h-full block" src="leetcode.svg" style={{objectFit:'contain'}}/>
+                <img alt="" className="object-cover object-center w-full h-full block" src="leetcode.svg" style={{objectFit:'contain'}}/>
                 </Link>
               </div> 
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <Link href="https://www.hackerrank.com/nitin1960_be20">
-                <img alt="" class="object-cover object-center w-full h-full block" src="hackerrank.svg" style={{objectFit:'contain'}}/>
+                <img alt="" className="object-cover object-center w-full h-full block" src="hackerrank.svg" style={{objectFit:'contain'}}/>
                 </Link>
               </div>    
             </div>
@@ -56,6 +57,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <br />
+      <div style={{display:'flex',justifyContent:'center'}}>
+        <h1 className='text-4xl font-semibold'>Time Line</h1>
+      </div>
+      <TimeLine/>
       <br />
       <div style={{display:'flex',justifyContent:'center'}}>
         <h1 className='text-4xl font-semibold'>Skills and Technologies</h1>
@@ -69,7 +75,6 @@ export default function Home() {
       <br />
       <Contact/>
       <Footer/>
-      
     </div>
   )
 }
